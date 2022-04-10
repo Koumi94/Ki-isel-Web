@@ -8,15 +8,15 @@ body {
 }
 
 /*--------- Start nav -------------*/
-.navbar-nav{
-  list-style: none ;
+.navbar-nav {
+  list-style: none;
   text-decoration: none;
   display: flex;
   justify-content: space-evenly;
   cursor: pointer;
 }
 
-.nav-item{
+.nav-item {
   color: white !important;
 }
 
@@ -150,7 +150,7 @@ a:active {
   background: #bac964 !important;
 }
 
-.site-navbar.scrolled .navbar-brand {
+/*--------.site-navbar.scrolled .navbar-brand {
   color: #000;
 }
 
@@ -172,16 +172,21 @@ a:active {
 
 .site-navbar.scrolled .navbar-nav>li.active>a {
   color: #bac964 !important;
-}
+}---*/
 /*--------- fin nav -------------*/
 
 .site-hero {
   background-color: #ccc;
   background-size: cover;
   background-position: center center;
+
   background-repeat: no-repeat;
   position: relative;
   overflow: hidden;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .site-hero,
@@ -298,6 +303,9 @@ a:active {
   font-size: 20px;
   font-weight: 200;
 }
+.service-margin{
+  margin-bottom:  2rem !important;
+}
 
 .site-link {
   position: relative;
@@ -363,11 +371,46 @@ a:active {
   color: #fff;
 }
 
-.btn.btn-primary:hover,
-.btn.btn-primary:active,
-.btn.btn-primary:focus {
-  background: #b2c251;
+.btn-primary {
+  color: #212529;
+  background-color: #bac964;
+  border-color: #bac964;
 }
+
+.pl-4,
+.px-4 {
+  padding: 1rem !important;
+
+
+}
+
+
+
+.btn-primary:hover {
+  color: #212529;
+  background-color: #adbf48;
+  border-color: #a7b941;
+}
+
+
+.btn-secondary {
+  color: #fff;
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+
+.btn-secondary:hover {
+  color: #fff;
+  background-color: #5a6268;
+  border-color: #545b62;
+}
+
+
+.
+
+
+
+
 
 .progress {
   overflow: visible;
@@ -466,6 +509,14 @@ a:active {
   background-color: #bac964;
   margin-left: auto;
   margin-right: auto;
+}
+.feature-color,.text-white{
+  color: white !important
+  ;
+}
+
+.Portfoli-background {
+  background-color: #333;
 }
 
 .portfolio-area .filters {
@@ -720,6 +771,32 @@ a:active {
 .form-control:focus {
   background: #404040;
 }
+/*--------- form-------------*/
+.form-group{
+  margin-bottom: 1rem;
+}
+
+.px-3, .py-4{
+  width: 100%;
+}
+.pb-4, .py-4{
+  padding-bottom: 1rem;
+}
+.pt-4, .py-4{
+  padding-top: 1rem;
+}
+.pl-3, .px-3{
+  padding-left: 1rem;
+}
+.pr-3, .px-3{
+  padding-right: 1rem;
+}
+.site-contact-details{
+  color: rgb(142, 142, 204);
+  font-size: 18px;
+}
+
+/*--------- fin form -------------*/
 
 .form-control::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
@@ -759,7 +836,7 @@ a:active {
 .site-contact-details li>span {
   color: #2c3e50;
   letter-spacing: .1em;
-  font-size: 12px;
+  font-size: 18px;
   font-weight: 500;
   margin-bottom: 5px;
   display: block;
@@ -829,7 +906,7 @@ a:active {
 
 .block-47 .block-47-quote .block-47-quote-author {
   font-size: 14px;
-  color: #666666;
+  color: rgb(216, 212, 212)  !important;
 }
 
 .letter-spacing {

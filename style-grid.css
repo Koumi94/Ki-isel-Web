@@ -1,15 +1,12 @@
 /*!
- * Bootstrap Grid v4.1.3 (https://getbootstrap.com/)
- * Copyright 2011-2018 The Bootstrap Authors
- * Copyright 2011-2018 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ This site is about the homework
+ we have code for Grid and MediaCaries
  */
 
 
 html {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  -ms-overflow-style: scrollbar;
+ 
 }
 
 *,
@@ -60,24 +57,21 @@ html {
 }
 
 .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
+  
   display: flex;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-right: -15px;
+  /*-margin-right: -15px;-----*/
   margin-left: -15px;
 }
 
-.no-gutters {
-  margin-right: 0;
-  margin-left: 0;
+
+
+.mb-5{
+  color: black;
 }
 
-.no-gutters>.col,
-.no-gutters>[class*="col-"] {
-  padding-right: 0;
-  padding-left: 0;
+.mb-4{
+  margin-bottom: 5px;
 }
 
 .col-1,
@@ -158,7 +152,6 @@ html {
 }
 
 .col {
-  -ms-flex-preferred-size: 0;
   flex-basis: 0;
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
@@ -452,6 +445,7 @@ html {
     max-width: 50%;
   }
 
+
   .col-sm-7 {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 58.33333%;
@@ -690,8 +684,11 @@ html {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
-    max-width: 50%;
+    max-width: 50%; 
+  
+  
   }
+
 
   .col-md-7 {
     -webkit-box-flex: 0;
