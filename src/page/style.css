@@ -282,7 +282,13 @@ a:active {
   background: #333;
   padding: 30px;
 }
-
+.material-icons,.gg-smartphone{
+  
+  font-size: 5rem !important;
+  color: white;
+  margin-top: 10px;
+  
+}
 .site-service-item .icon {
   display: block;
   margin-bottom: 50px;
