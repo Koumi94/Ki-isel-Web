@@ -2,19 +2,11 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="/public/styles/style-grid.css">
-	<link rel="stylesheet" href="/public/styles/style.css">
-	<link rel="stylesheet" href="/public/styles/style2.css">
-	<script src="custom.js"></script>
-	
-
+	<%- include('includes/head') %>
 	<title>Me</title>
+	<link rel="stylesheet" href="/styles/style.css">
+	<link rel="stylesheet" href="/styles/style2.css">
+	<link rel="stylesheet" href="/styles/style-grid.css">
 
 
 </head>
@@ -38,7 +30,7 @@
 					<li class="nav-item"><a class="nav-link" href="#section-resume">Resume</a></li>
 					<li class="nav-item"><a class="nav-link" href="#section-about">About</a></li>
 					<li class="nav-item"><a class="nav-link" href="#section-contact">Contact</a></li>
-					<li class="nav-item"><a class="nav-link" href="/src/Login/login.html">Login</a></li>
+					<li class="nav-item"><a class="nav-link" href="../Login/login.html">Login</a></li>
 				</ul>
 			</div>
 		</div>
@@ -83,11 +75,11 @@
 						<div class="relative">
 							<div class="thumb">
 								<div class="overlay overlay-bg"></div>
-								<img class="image img-fluid" src="/images/Redacteur.dd30ab9b.png" alt="">
+								<img class="image img-fluid" src="../../images/Redacteur.dd30ab9b.png" alt="">
 							</div>
-							<a href="images/p1.jpg" class="img-pop-up">
+							<a href="/public/images/p1.jpg" class="img-pop-up">
 								<div class="middle">
-									<div class="text align-self-center d-flex"><img src="/images/preview.png" alt="">
+									<div class="text align-self-center d-flex"><img src="../../images/preview.png" alt="">
 									</div>
 								</div>
 							</a>
@@ -137,7 +129,7 @@
 								<div class="overlay overlay-bg"></div>
 								<img class="image img-fluid" src="/images/p4.jpg" alt="">
 							</div>
-							<a href="/images/p4.jpg" class="img-pop-up">
+							<a href="../../images/p4.jpg" class="img-pop-up">
 								<div class="middle">
 									<div class="text align-self-center d-flex"><img src="/images/preview.png" alt="">
 									</div>

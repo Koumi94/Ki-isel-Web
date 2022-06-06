@@ -2,12 +2,16 @@ const path = require('path');
 
 const express = require('express');
 
-const loginRoutes = require('./routes/login');
+
+
+let loginRoutes = require('./routes/login');
+
+
 
 const app = express();
 // Activate EJS view engine
 app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, '/views'));
+app.set('views', path.join(__dirname, './src/views'));
 
 app.use(express.urlencoded({ extended: true })); // Parse incoming request bodies
 app.use(express.static('public')); // Serve static files (e.g. CSS files)
@@ -24,4 +28,4 @@ app.use(function (error, req, res, next) {
     res.status(500).render('500');
   });
   
-  app.listen(3000);
+  app.listen(3001);
