@@ -1,0 +1,6 @@
+.env
+node_modules
+
+npm i passport passport-local  pour creer une extension pour la verification du mot de passe et le nom de l'utilisateur
+    express-session permet d'afficher les session
+    express-flash permet d'afficher les erreurs the mot de passe et nom 

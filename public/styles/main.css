@@ -45,7 +45,7 @@ body {
     padding: 2rem;
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
     border-radius: var(--border-radius);
-    background: #ffffff;
+    
 }
 
 .login,
@@ -54,9 +54,9 @@ body {
     font: 500 1rem 'Quicksand', sans-serif;
 }
 
-.form--hidden {
+/* .form--hidden {
     display: none;
-}
+} */
 
 .form > *:first-child {
     margin-top: 0;
