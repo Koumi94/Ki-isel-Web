@@ -122,7 +122,9 @@ a:not([href]):not([tabindex]) {
 }
 
 
-
+.image__fix{
+  height: 100%;
+}
 figure {
   margin: 0 0 1rem;
 }
