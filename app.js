@@ -6,6 +6,7 @@ const flash = require('connect-flash');
 const session = require('express-session');
 const path = require('path');
 
+
 const express = require('express');
 
 //The bcrypt hashing function allows 
@@ -57,6 +58,10 @@ app.use(
 // Passport middleware
 app.use(passport.initialize());
 app.use(passport.session());
+
+// Connect flash
+app.use(flash());
+
 
  //this handle error 
 app.use(function (error, req, res, next) {

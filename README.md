@@ -1,6 +1,10 @@
-# Node.js & Passport Login
+Mamadou Aliou Barry
+191502208
+Bilgisayar Mühendişliği 
 
-This is a user login and registration app using Node.js, Express, Passport, Mongoose, EJS and some other packages.
+# Portofolio & Node.js & Passport Login
+
+This is a Portofolio and  user login and registration app using Node.js, Express, Passport, Mongoose, EJS and some other packages.
 
 ### Version: 2.0.0
 
@@ -15,9 +19,9 @@ $ npm start
 # Or run with Nodemon
 $ npm run dev
 
-# Visit http://localhost:5000
+# Visit http://localhost:3001
 ```
 
 ### MongoDB
 
-Open "config/keys.js" and add your MongoDB URI, local or Atlas
+Open "db/db.js" and add your MongoDB URI, local or Atlas

@@ -3,6 +3,8 @@ const express = require('express');
 const bcrypt = require('bcrypt');
 const passport = require('passport');
 const app = express();
+
+
 //variable qui permet d'utiliser 
 
 
@@ -13,23 +15,25 @@ router.get('/', function (req, res) {
     res.render('index');
 })
 
-router.get('/login', function (req, res) {
-    res.render('login');
-})
+const { forwardAuthenticated } = require('../db/auth');
+// Login Page
+router.get('/login',  (req, res) => res.render('login'));
 
-router.post('/login', function (req, res) {
+// Login
+router.post('/login', (req, res, next) => {
     passport.authenticate('local', {
-        successRedirect: '/index',
-        failureRedirect: '/login',
-        failureFlash: true
-      })(req, res, next);
-})
+      successRedirect: '/index',
+      failureRedirect: '/login',
+      failureFlash: true
+    })(req, res, next);
+  });
 
 
 
-router.get('/createAcount', function (req, res) {
-    res.render('createAcount');
-})
+
+// Register Page
+router.get('/createAcount',  (req, res) => res.render('createAcount'));
+
 
 router.post('/createAcount', function (req, res) {
 
