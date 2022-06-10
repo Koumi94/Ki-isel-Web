@@ -1,17 +1,23 @@
+
+const expressLayouts = require('express-ejs-layouts');
+const mongoose = require('mongoose');
+const passport = require('passport');
+const flash = require('connect-flash');
+const session = require('express-session');
 const path = require('path');
 
 const express = require('express');
 
-const mongoose = require('mongoose');
 //The bcrypt hashing function allows 
 //us to build a password security platform that scales 
 //with computation power and always hashes every password with a salt.
 const bcrypt =  require('bcrypt');
-const passport = require('passport');
 
 
-// const initializePassport = require('./passport-config');
+
 // initializePassport(passport);
+require('./db/passport')(passport);
+
 
 //Setting Database
 const db = require('./db/db').MongoURI;
@@ -39,6 +45,18 @@ app.use(express.static('public')); // Serve static files (e.g. CSS files)
 //set routes 
  app.use(loginRoutes);
 
+ // Express session
+app.use(
+  session({
+    secret: 'secret',
+    resave: true,
+    saveUninitialized: true
+  })
+);
+
+// Passport middleware
+app.use(passport.initialize());
+app.use(passport.session());
 
  //this handle error 
 app.use(function (error, req, res, next) {
